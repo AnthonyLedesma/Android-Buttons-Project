@@ -4,23 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.myappcompany.rob.exampleapp.MainActivity">
+    tools:context="com.myappcompany.rob.exampleproject.MainActivity">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="417dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="53dp"
-        android:background="@android:color/holo_orange_light"
+        android:layout_marginBottom="586dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginLeft="113dp"
+        android:layout_marginRight="113dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="68dp"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center_vertical"
         android:text="My Great App"
-        android:textColor="@android:color/holo_green_dark"
         android:textSize="30sp"
         android:textStyle="bold"
+        android:typeface="monospace"
+        android:visibility="visible"
+        app:fontFamily="monospace"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"
+        android:layout_marginTop="45dp"
+        android:onClick="clickFunction"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 </android.support.constraint.ConstraintLayout>
